@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href= "../css/schedule.css">
+<script>
+    var wait_time = 2;
+    var cost = 6;
+       var tax_rate = 0.20
+       cost = cost * wait_time;
+       cost = cost + (cost * tax_rate)
+
+       var cars = 6
+       var costparking= 22
+       var hours = 7
+
+       //parking lot hour
+       costparking = costparking * hours;
+
+
+
+
+$(document).ready(function(){
+$(".popup").click(function(){
+alert(cost.toFixed(2));
+});
+});
+$(document).ready(function(){
+$(".taxrate").click(function(){
+alert(tax_rate);
+});
+});
+$(document).ready(function(){
+$(".parking").click(function(){
+alert(costparking);
+});
+});
+
+
+
+
+
+</script>
+    <h1>Flight Schedule</h1>
+</head>
+<body>
+<div>
+    <table class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">City</th>
+            <th scope="col">Departure</th>
+            <th scope="col">Arrival</th>
+            <th scope="col">Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           
+            <td>Omaha</td>
+            <td>12:00</td>
+            <td>3:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            
+            <td>Chicago</td>
+            <td>6:00</td>
+            <td>8:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            
+            <td>Houston</td>
+            <td>2:00</td>
+            <td>4:00</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+<button class= "popup">Click Here
+
+</button>
+<button class= "taxrate">Tax Rate</button>
+
+<button class= "parking"> Parking Cost</button>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+<footer>
+
+</footer>
+</html>
+
+
+
+
+
